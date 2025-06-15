@@ -1,0 +1,62 @@
+{
+  "name": "@mozayk/eslint-config-react",
+  "version": "1.0.0",
+  "description": "Mozayk ESLint configurations for React",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "mozayk",
+    "react",
+    "lint"
+  ],
+  "homepage": "https://github.com/mozayk/typescript-style-guide#readme",
+  "bugs": {
+    "url": "https://github.com/mozayk/typescript-style-guide/issues"
+  },
+  "license": "MIT",
+  "author": "José Lucas Oliveira (https://github.com/joselucasoliveira)",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "configs",
+    "rules"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./react": "./configs/presets/react.js",
+    "./react-legacy": "./configs/presets/react-legacy.js"
+  },
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozayk/typescript-style-guide.git"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "globals": "^16.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57 || ^9.7",
+    "eslint-plugin-jsx-a11y": "^6.10",
+    "eslint-plugin-react": "^7.35",
+    "eslint-plugin-react-hooks": "^5"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

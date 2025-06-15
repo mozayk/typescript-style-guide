@@ -1,0 +1,48 @@
+{
+  "name": "@mozayk/prettier-config",
+  "version": "1.0.0",
+  "description": "Mozayk Prettier configuration",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "mozayk",
+    "format"
+  ],
+  "homepage": "https://github.com/mozayk/typescript-style-guide#readme",
+  "bugs": {
+    "url": "https://github.com/mozayk/typescript-style-guide/issues"
+  },
+  "license": "MIT",
+  "author": "José Lucas Oliveira (https://github.com/joselucasoliveira)",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "rules"
+  ],
+  "exports": {
+    ".": "./index.js"
+  },
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozayk/typescript-style-guide.git"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@mozayk/eslint-config-base": "^1.0.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@mozayk/eslint-config-base",
+  "version": "1.0.0",
+  "description": "Mozayk ESLint configuration for JavaScript",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "mozayk",
+    "javascript",
+    "lint"
+  ],
+  "homepage": "https://github.com/mozayk/typescript-style-guide#readme",
+  "bugs": {
+    "url": "https://github.com/mozayk/typescript-style-guide/issues"
+  },
+  "license": "MIT",
+  "author": "José Lucas Oliveira (https://github.com/joselucasoliveira)",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "configs",
+    "rules"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./js": "./configs/presets/js.js"
+  },
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozayk/typescript-style-guide.git"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "globals": "^16.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57 || ^9.7",
+    "eslint-plugin-import": "^2.31"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
